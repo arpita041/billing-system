@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import LoginPage from './Components/LoginPage/LoginPage';
+import PasswordResetPage from './Components/PasswordResetPage/PasswordResetPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/login' element={<LoginPage />}/>
+          <Route path='/passwordReset' element={<PasswordResetPage/>}/>
+          <Route path="*" element={<Navigate to="/login" replace />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

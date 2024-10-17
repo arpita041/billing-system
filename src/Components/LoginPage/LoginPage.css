@@ -1,0 +1,90 @@
+
+.login-container {
+  
+    height: 55%;
+    width: 30%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+}
+
+.login-form {
+    background-color: white;
+    width: 100%;
+    padding: 0 7%;
+    border-radius:10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.form--heading{
+    font-weight: 500;
+    text-align: center;
+    font-size: xx-large;
+    color: #14B8A6;
+    padding: 18% 0 2% 0;
+}
+
+.form--subtext{
+  font-size: small;
+  padding-bottom: 6%;
+  color:#14B8A6;
+  font-weight: 500;
+  text-align: center;
+}
+.form--padding{
+    padding-top:8%
+}
+input.p-password-input.p-inputtext.p-component {
+    width: 100%;
+}
+.form--texts{
+    color:#14B8A6;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3% 0;
+    font-size: 85%;
+}
+.form-link{
+    font-size: small;
+    color:#14B8A6;
+    float: right;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.form--button{
+    padding-bottom: 3%;
+}
+.form--register{
+    color:#14B8A6;
+    text-align: center;
+    padding-bottom: 18%;
+    font-size: 85%;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .login-container {
+  
+        height: 55%;
+        width: 55%;
+    }
+    .form--texts{
+        color:#14B8A6;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:3% 0;
+        font-size: x-small;
+    }
+    .form-link{
+        font-size: x-small;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+}
